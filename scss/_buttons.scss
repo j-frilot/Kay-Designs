@@ -1,0 +1,42 @@
+@use "variables" as v;
+
+.btn {
+    text-transform: uppercase;
+    color: v.$black;
+    margin: 5px;
+    padding: 11px 25px;
+    border-radius: 20px;
+}
+
+.btn-trans {
+    color: v.$white;
+    border: 2px solid v.$white;
+    border-radius: 20px;
+    &:hover {
+        color: v.$clr-secondary;
+        background-color: v.$white;
+    }
+}
+
+.btn-white {
+    color: v.$clr-secondary;
+    background-color: v.$white;
+    &:hover {
+        color: v.$white;
+        background-color: v.$clr-secondary;
+    }
+}
+
+.btn-green {
+    color: v.$white;
+    background-color: v.$clr-secondary;
+    &:hover {
+        padding-right: 35px;
+    }
+}
+
+.btn-search{
+    font-size: 20px;
+    color: v.$clr-secondary;
+    background-color: v.$white;
+}

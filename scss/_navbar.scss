@@ -1,0 +1,39 @@
+@use "variables" as v;
+
+header{
+    height: 95vh;
+    background-image: url("/assets/img/slide-main-1.jpg");
+    background-position: center;
+    background-size:cover;
+    color: v.$white;
+    font-size: v.$size-one;
+    text-transform: uppercase;
+    nav {
+        width: 80%;
+        margin: auto;
+        padding: 15px 0px;
+        position: sticky;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+        h1{
+            font-weight: 600;
+        }
+        .nav-list {
+            display: flex;
+            align-items: center;
+            li {
+                padding: 0 10px;
+            }
+            &-drop-down {
+                display: none;
+                background-color: v.$white;
+                li{
+                    color: v.$clr-tertiary;
+                    border: 1px solid v.$black;
+                }
+            }
+        }
+    }
+}

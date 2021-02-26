@@ -405,7 +405,7 @@ hr {
 header {
   height: 100vh;
   background-color: #1e1e1e;
-  background-image: url("img/slide-main-1.jpg");
+  background-image: url("/assets/img/slide-main-1.jpg");
   background-position: center;
   background-size: cover;
   color: #fff;
@@ -421,6 +421,7 @@ header nav {
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
+  z-index: 1;
 }
 header nav h1 {
   font-weight: 700;
@@ -484,7 +485,7 @@ header nav .nav-list .link-active {
 
 .about-page {
   width: 80%;
-  margin: 150px auto;
+  margin: auto;
   font-size: 16px;
   line-height: 1.4;
   color: #f5b759;

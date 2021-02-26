@@ -1,8 +1,8 @@
-
-@use "reset";
-@use "variables";
-@use "global";
-@use "navbar";
-@use "slider";
-@use "buttons";
-@use "about";
+@use "base/reset";
+@use "base/variables";
+@use "base/global";
+@use "components/buttons";
+@use "layout/navbar";
+@use "layout/slider";
+@use "layout/about";
+@use "layout/bullets";

@@ -1,14 +1,21 @@
-@use "variables" as v;
+@use "../base/variables" as v;
+
 
 .about-page {
+    // text-align: center;
     width: 80%;
     margin: 150px auto;
     font-size: v.$size-three;
+    line-height: 1.4;
     color: v.$clr-secondary;
     .about {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        
+        @media(max-width: 762px) {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+        }
         &-icons{
             h2{
                 font-size: v.$size-four;

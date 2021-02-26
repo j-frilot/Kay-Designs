@@ -1,7 +1,7 @@
-@use "variables" as v;
+@use "../base/variables" as v;
 
 header{
-    height: 95vh;
+    height: 100vh;
     background-image: url("/assets/img/slide-main-1.jpg");
     background-position: center;
     background-size:cover;
@@ -18,22 +18,36 @@ header{
         align-items: center;
         text-transform: uppercase;
         h1{
-            font-weight: 600;
+            font-weight: 700;
         }
         .nav-list {
+            position: relative;
             display: flex;
             align-items: center;
+            li ul {
+                display: none;
+            }
             li {
                 padding: 0 10px;
-            }
-            &-drop-down {
-                display: none;
-                background-color: v.$white;
-                li{
+                &:hover ul {
+                    display: block;
+                    position: absolute;
                     color: v.$clr-tertiary;
-                    border: 1px solid v.$black;
+                    padding: 0px 40px;
+                    background: v.$white;
+                    opacity: 0.5;
                 }
             }
+            .link-active{
+                color: v.$clr-tertiary;
+            }
+            @media(max-width:762px) {
+                display: none;   
+            }
+        }
+        @media(max-width:762px) {
+            justify-content: center;   
         }
     }
+    
 }

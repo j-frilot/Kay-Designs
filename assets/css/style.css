@@ -404,7 +404,8 @@ hr {
 
 header {
   height: 100vh;
-  background-image: url("/assets/img/slide-main-1.jpg");
+  background-color: #1e1e1e;
+  background-image: url("img/slide-main-1.jpg");
   background-position: center;
   background-size: cover;
   color: #fff;
@@ -428,6 +429,7 @@ header nav .nav-list {
   position: relative;
   display: flex;
   align-items: center;
+  font-weight: 600;
 }
 header nav .nav-list li ul {
   display: none;

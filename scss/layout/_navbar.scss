@@ -1,56 +1,49 @@
 @use "../base/variables" as v;
 
-header{
-    height: 100vh;
-    background-color: v.$clr-tertiary;
-    background-image: url("/assets/img/slide-main-1.jpg");
-    background-position: center;
-    background-size:cover;
-    color: v.$white;
-    font-size: v.$size-one;
+
+
+nav {
+    margin: auto;
+    padding: 15px 0px;
+    position: sticky;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // color: v.$clr-secondary;
     text-transform: uppercase;
-    nav {
-        width: 80%;
-        margin: auto;
-        padding: 15px 0px;
-        position: sticky;
+    z-index: 1;
+    h1{
+        font-weight: 700;
+    }
+    .nav-list {
+        position: relative;
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        text-transform: uppercase;
-        z-index: 1;
-        h1{
-            font-weight: 700;
+        font-weight: 600;
+        li ul {
+            display: none;
         }
-        .nav-list {
-            position: relative;
-            display: flex;
-            align-items: center;
-            font-weight: 600;
-            li ul {
-                display: none;
-            }
-            li {
-                padding: 0 10px;
-                &:hover ul {
-                    display: block;
-                    position: absolute;
-                    color: v.$clr-tertiary;
-                    padding: 0px 40px;
-                    background: v.$white;
-                    opacity: 0.5;
-                }
-            }
-            .link-active{
+        li {
+            padding: 0 10px;
+            &:hover ul {
+                position: absolute;
+                display: block;
+                padding: 0px 40px;
+                background: v.$white;
                 color: v.$clr-tertiary;
+                opacity: 0.5;
             }
-            @media(max-width:762px) {
-                display: none;   
-            }
+        }
+        .link-active {
+            color: v.$clr-secondary;
+            border-bottom: solid 2px v.$clr-secondary;
         }
         @media(max-width:762px) {
-            justify-content: center;   
+            display: none;   
         }
     }
-    
-}
+    @media(max-width:762px) {
+        justify-content: center;   
+    }
+    }

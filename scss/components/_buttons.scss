@@ -1,13 +1,13 @@
 @use "../base/variables" as v;
 
-
 .btn {
-    text-transform: uppercase;
-    color: v.$black;
     margin: 5px;
     padding: 11px 25px;
+    border: none;
     border-radius: 20px;
+    color: v.$black;
     font-size: v.$size-two;
+    text-transform: uppercase;
 }
 
 .btn-trans {
@@ -30,14 +30,14 @@
 }
 
 .btn-green {
-    color: v.$white;
+    color: v.$black;
     background-color: v.$clr-secondary;
     &:hover {
         padding-right: 35px;
     }
 }
 
-.btn-search{
+.btn-search {
     font-size: 20px;
     color: v.$clr-secondary;
     background-color: v.$white;

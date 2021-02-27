@@ -1,13 +1,10 @@
 @use "../base/variables" as v;
 
-
 .about-page {
-    // text-align: center;
-    width: 80%;
     margin: auto;
-    font-size: v.$size-three;
+    width: 80%;
     line-height: 1.4;
-    color: v.$clr-secondary;
+    font-size: v.$size-three;
     .about {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -16,32 +13,32 @@
             flex-wrap: wrap;
             text-align: center;
         }
-        &-icons{
-            h2{
+        &-icons {
+            h2 {
+                margin: 0;
                 font-size: v.$size-four;
                 font-weight: 700;
-                margin: 0;
             }
             color: v.$black;
-            &-list{
+            &-list {
+                margin-bottom: 50px;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                margin-bottom: 50px;
                 .about-item {
+                    padding:15px;
                     display: flex;
                     flex-wrap: wrap;
-                    padding:15px;
-                    img{
+                    img {
                         padding-right: 5px;
                     }
-                    h3{
+                    h3 {
                         font-size: v.$size-two;
                         font-weight: 600;
                     }
                 }
             }
         }
-        &-bio{
+        &-bio {
             color: v.$clr-tertiary;
         }
     }

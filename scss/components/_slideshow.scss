@@ -1,0 +1,12 @@
+@use "../base/variables" as v;
+
+header {
+    background-color: v.$clr-tertiary;
+    .slideshow {
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+    }
+}

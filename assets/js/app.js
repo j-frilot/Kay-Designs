@@ -1,6 +1,6 @@
-let imageOne = "url(/assets/img/slide-main-1.jpg)"
-let imageTwo = "url(/assets/img/slide-main-2.jpg)"
-let imageThree = "url(/assets/img/slide-main-3.jpg)"
+let imageOne = "url(img/slide-main-1.jpg)"
+let imageTwo = "url(img/slide-main-2.jpg)"
+let imageThree = "url(img/slide-main-3.jpg)"
 
 let images = [
     `${imageOne}`,

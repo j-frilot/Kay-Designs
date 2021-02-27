@@ -1,6 +1,7 @@
 @use "../base/variables" as v;
 
 header {
+    background-image: url(/img/slide-main-1.jpg);
     background-color: v.$clr-tertiary;
     .slideshow {
         height: 100vh;
